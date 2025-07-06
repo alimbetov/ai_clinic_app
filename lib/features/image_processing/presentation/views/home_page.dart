@@ -11,7 +11,14 @@ import '../blocs/image_state.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  final categories = const ['Classification', 'Segmentation', 'Detection'];
+  final categories = const [
+    'Classification',
+    'Segmentation',
+    'Detection',
+    'OCR',
+    'Face Recognition',
+    'Pose Estimation'
+  ];
 
   Future<void> _pickImage(BuildContext context) async {
     final file = await ImagePickerHelper.pickImage();
